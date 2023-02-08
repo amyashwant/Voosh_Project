@@ -21,7 +21,7 @@ function AddUser() {
       "http://localhost:8000/api/user/add-order",
       user
     );
-    console.log(res.data);
+    
 
     setNum((num) => num + 1);
   };
@@ -29,7 +29,7 @@ function AddUser() {
   useEffect(() => {
     const gettings = async () => {
       const res = await axios.get("http://localhost:8000/api/user/get-order");
-      console.log(res.data);
+   
       setUpdate(res.data);
     };
     gettings();

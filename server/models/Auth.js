@@ -12,7 +12,6 @@ const authSchema = new mongoose.Schema(
     phone: {
       type: String,
       required: true,
-    //   max: 50,
       unique: true,
     },
     password: {
